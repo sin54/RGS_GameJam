@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1120894728695824572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.144, y: -0.009, z: 0}
+  m_LocalPosition: {x: 0, y: 0.038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68,7 +68,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.087}
   m_SizeDelta: {x: 1.7544, y: 0.8985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3134263236571188478
@@ -305,7 +305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.745}
+  m_AnchoredPosition: {x: 0, y: 0.69}
   m_SizeDelta: {x: 0.25, y: 0.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5031523087017458449
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c070e6e4fb6e1b4bbc3b5b36ae4e847, type: 3}
+  m_Sprite: {fileID: -8222406987496834216, guid: 5e81fd2d1cfaa244cab3377cd0dda4d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -356,7 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3957481166748095547}
   - component: {fileID: 2947690151599285949}
-  - component: {fileID: 2421900109574699285}
+  - component: {fileID: 7762508927559683225}
   m_Layer: 6
   m_Name: Renderer
   m_TagString: Untagged
@@ -425,8 +425,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: -365474415, guid: 8d8c07b500b9a6743a589a7263450493, type: 3}
+  m_SortingOrder: 20
+  m_Sprite: {fileID: -4098175976990560125, guid: 8fe1f53df51dcc14790745e9cc79058e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -437,7 +437,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2421900109574699285
+--- !u!95 &7762508927559683225
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ Animator:
   m_GameObject: {fileID: 7129468206593495227}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 481bd0b723b7ca94cb7dae96083f8c40, type: 2}
+  m_Controller: {fileID: 9100000, guid: f38ec307bc895ec498ef527cae05d66e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: -4298250654952913505}
   - component: {fileID: 1931119247989178352}
   - component: {fileID: 5139909609544389373}
+  - component: {fileID: 6703966352372907212}
   m_Layer: 6
   m_Name: RoomPlayer
   m_TagString: Untagged
@@ -537,7 +538,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.09590101, y: -0.032154024}
+  m_Offset: {x: 0, y: -0.032154024}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -547,7 +548,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.3454802, y: 0.4760247}
+  m_Size: {x: 0.42402387, y: 0.70824075}
   m_EdgeRadius: 0
 --- !u!50 &341667156520893021
 Rigidbody2D:
@@ -783,8 +784,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5e7cd728cc84c44aa18b7d0eb71793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactor
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   interactionPos: {fileID: 7207532486829482350}
-  interactionRange: {x: 0.8, y: 0.5}
+  interactionRange: {x: 1, y: 0.85}
   interactionLayer:
     serializedVersion: 2
     m_Bits: 128
+  interactPromptPrefab: {fileID: 7017691658143864487, guid: 849e84aad928389489a6b018f0439e6e, type: 3}
+--- !u!114 &6703966352372907212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255203102187795411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716b924cd58efd34ebf6bcb8629e9e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomPlayer
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  selectedCharacter: 0

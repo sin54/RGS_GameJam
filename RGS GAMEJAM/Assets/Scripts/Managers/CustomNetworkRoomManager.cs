@@ -31,7 +31,7 @@ public class CustomNetworkRoomManager : NetworkRoomManager
     {
         base.OnRoomServerSceneChanged(sceneName);
 
-        roomSync = GameObject.Find("RoomSync").GetComponent<RoomSync>();
+        roomSync = GameObject.Find("RoomManager_Network").GetComponent<RoomSync>();
         SetRoomData(tempRoomData);
     }
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
@@ -55,6 +55,8 @@ public class CustomNetworkRoomManager : NetworkRoomManager
     public override void OnRoomServerPlayersReady()
     {
     }
+    public void ChangeCharacter(Character character)
+    {
 
-
+    }
 }

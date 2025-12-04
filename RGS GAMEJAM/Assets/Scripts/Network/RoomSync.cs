@@ -4,8 +4,13 @@ using Mirror;
 public class RoomSync : NetworkBehaviour
 {
     [SyncVar(hook = nameof(OnRoomDataChanged))]
-    [SerializeField] private RoomData currentRoomData;
+    private RoomData currentRoomData;
 
+    [SerializeField] private RoomManager roomManager;
+
+    private void Awake()
+    {
+    }
     public RoomData GetRoomData()
     {
         return currentRoomData;
@@ -91,6 +96,6 @@ public class RoomSync : NetworkBehaviour
 
     private void OnRoomDataChanged(RoomData oldData, RoomData newData)
     {
-        // UI 업데이트 등
+        roomManager.UpdateRoomUI(newData);
     }
 }
