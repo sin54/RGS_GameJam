@@ -589,6 +589,7 @@ GameObject:
   - component: {fileID: 7600196819990560385}
   - component: {fileID: 1975245369292562829}
   - component: {fileID: 5927237105025106964}
+  - component: {fileID: -8192865659499936196}
   m_Layer: 6
   m_Name: GamePlayer
   m_TagString: Untagged
@@ -1003,6 +1004,26 @@ MonoBehaviour:
   playerMaxHealth: 10
   playerHealthImg: {fileID: 6288499084405092469}
   dmgIndicatorPos: {fileID: 5664302888731698610}
+--- !u!114 &-8192865659499936196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255203102187795411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22266b0676d90634da7a7fdab3bca052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPing
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  inputHandler: {fileID: 4125635564062773773}
+  playerCamera: {fileID: 0}
+  pingPrefab: {fileID: 4086581586544808354, guid: 7137e034282a34444b66f17ae7ace8fa, type: 3}
+  pingWheelUI: {fileID: 0}
+  minDragDistance: 30
 --- !u!1 &9149525343408179449
 GameObject:
   m_ObjectHideFlags: 0
