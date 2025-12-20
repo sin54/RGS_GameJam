@@ -24,8 +24,12 @@ public class ChestInteraction : NetworkBehaviour, IInteractable
     private bool isInRange = false;
     private Interactor currentInteractor;
     private Coroutine transferRoutine;
+    private Animator chestAnim;
 
-
+    private void Awake()
+    {
+        chestAnim = GetComponentInChildren<Animator>();
+    }
     private void Update()
     {
         if (isInRange)
@@ -74,7 +78,13 @@ public class ChestInteraction : NetworkBehaviour, IInteractable
 
             if (!isInRange) break;
 
-            CustomNetworkGamePlayer.localPlayer.CmdMoveResourceToGlobal();
+            if (CustomNetworkGamePlayer.localPlayer.isResourceMoved())
+            {
+                chestAnim.SetTrigger("ChestInteract");
+                CustomNetworkGamePlayer.localPlayer.CmdMoveResourceToGlobal();
+            }
+
+            
         }
     }
     [Server]

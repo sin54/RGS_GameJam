@@ -49,6 +49,10 @@ public class TowerInteraction : NetworkBehaviour, IInteractable
         {
             upgradePanel.SetActive(true);
         }
+        if (BT.towerAttack != null)
+        {
+            BT.towerAttack.SetRange(true);
+        }
     }
 
     public void OnExitRange(Interactor interactor)
@@ -56,6 +60,10 @@ public class TowerInteraction : NetworkBehaviour, IInteractable
         if (upgradePanel != null)
         {
             upgradePanel.SetActive(false);
+        }
+        if (BT.towerAttack != null)
+        {
+            BT.towerAttack.SetRange(false);
         }
     }
 

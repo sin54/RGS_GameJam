@@ -118,7 +118,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.963, y: 0.007, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7907380792641586753}
@@ -141,10 +141,10 @@ MonoBehaviour:
   syncInterval: 0
   Type: 0
   spriteRenderer: {fileID: 2165998664474873004}
-  defendSprite: {fileID: -4178046375966092550, guid: b3ba76147d5984e4e8187357052509a7, type: 3}
-  onMyWaySprite: {fileID: -4910088520043721169, guid: 568d7bbdbb055ee43bf5a766e430f303, type: 3}
-  assistSprite: {fileID: -4983721108374671077, guid: 43699320352fa5a478394cc57f64525b, type: 3}
-  missingSprite: {fileID: -6470460504253458178, guid: 7c2092ea1e349614baad9ad1e5cd9081, type: 3}
+  defendSprite: {fileID: 21300000, guid: 5d1b909e905bbd346bca792d2ea6b5a4, type: 3}
+  onMyWaySprite: {fileID: 21300000, guid: 8965942c505de074089609f336f1a8db, type: 3}
+  assistSprite: {fileID: 21300000, guid: 1a81ff4303c6dcb4a8cc252ca2b5f7a9, type: 3}
+  missingSprite: {fileID: 21300000, guid: 403979ae2cb17d74e99f7962f6da78f7, type: 3}
   lifetime: 1
 --- !u!114 &4533326117816398691
 MonoBehaviour:
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
   sceneId: 0
-  _assetId: 3312059058
+  _assetId: 3290826663
   serverOnly: 0
   visibility: 0
   hasSpawned: 0

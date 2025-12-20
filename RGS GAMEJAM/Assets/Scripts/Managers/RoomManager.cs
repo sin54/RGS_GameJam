@@ -57,14 +57,22 @@ public class RoomManager : MonoBehaviour
     private void Update()
     {
         playerAmountTxt.text = playerAmountSlider.value.ToString();
-        if (((NetworkRoomManager)NetworkManager.singleton).allPlayersReady)
+        if (roomSync.GetRoomData().maxPlayers == 1)
         {
             hostStartBtn.interactable = true;
         }
         else
         {
-            hostStartBtn.interactable = false;
+            if (((NetworkRoomManager)NetworkManager.singleton).allPlayersReady)
+            {
+                hostStartBtn.interactable = true;
+            }
+            else
+            {
+                hostStartBtn.interactable = false;
+            }
         }
+
     }
 
     public void OnPressedStartButton()

@@ -140,7 +140,6 @@ public class GridRenderer : MonoBehaviour
 
         Vector2 snappedCart = ToCartesian2D(nearestIsoX, nearestIsoY);
 
-        // 최종적으로 cart -> 화면위치에서 cellSize를 한 번만 적용
         highlightInstance.transform.localPosition = new Vector2(snappedCart.x, snappedCart.y-0.5f);
 
         highlightInstance.SetActive(true);

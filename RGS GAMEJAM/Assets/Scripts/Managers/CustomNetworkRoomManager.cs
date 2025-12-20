@@ -139,7 +139,7 @@ public class CustomNetworkRoomManager : NetworkRoomManager
     }
     public void StartGame()
     {
-        if (allPlayersReady)
+        if (allPlayersReady||roomSync.GetRoomData().maxPlayers==1)
         {
             ServerChangeScene(GameplayScene);
         }

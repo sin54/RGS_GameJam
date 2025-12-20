@@ -108,7 +108,18 @@ public class CustomNetworkGamePlayer : NetworkBehaviour
 
         GameManager.Instance.resourceManager.localStoneAmountTxt.text = $"({newValue})";
     }
-
+    public bool isResourceMoved()
+    {
+        if (localStick > 0) 
+        {
+            return true;
+        }
+        if (localStick > 0)
+        {
+            return true;
+        }
+        return false;
+    }
     [Command]
     public void CmdMoveResourceToGlobal()
     {

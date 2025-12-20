@@ -5,6 +5,7 @@ public class TowerAttack : NetworkBehaviour
 {
     [SerializeField] private Transform searchPosition;
     [SerializeField] private Transform attackPosition;
+    [SerializeField] private GameObject attackRangeObj;
     [SerializeField] private int prefabId;
     private SO_BaseAttackTower attackTowerData;
     private BaseTower BT;
@@ -19,6 +20,8 @@ public class TowerAttack : NetworkBehaviour
     private void Start()
     {
         attackTowerData = (SO_BaseAttackTower)BT.towerData;
+        attackRangeObj.transform.localScale = Vector3.one * 2 * attackTowerData.attackRange[BT.towerLevel];
+        attackRangeObj.SetActive(false);
     }
 
     private void Update()
@@ -70,6 +73,10 @@ public class TowerAttack : NetworkBehaviour
         }
 
         return nearest;
+    }
+    public void SetRange(bool isActive)
+    {
+        attackRangeObj.SetActive(isActive);
     }
     private void OnDrawGizmosSelected()
     {

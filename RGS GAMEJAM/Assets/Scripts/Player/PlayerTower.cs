@@ -33,6 +33,10 @@ public class PlayerTower : NetworkBehaviour
                     CmdCheckCell(selectedCell);
                 }
             }
+            else
+            {
+                GameManager.Instance.gridRenderer.UnHighlightCell();
+            }
         }
         else
         {
