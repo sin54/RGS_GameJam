@@ -335,10 +335,10 @@ GameObject:
   - component: {fileID: 3382263231723016309}
   - component: {fileID: 3021900957594822675}
   - component: {fileID: 107325159803076693}
-  - component: {fileID: 3185933670624341120}
   - component: {fileID: 8495419256588217089}
   - component: {fileID: 181268767807876095}
   - component: {fileID: 4123381468817514655}
+  - component: {fileID: 6393756599324180932}
   m_Layer: 9
   m_Name: EnemyObj
   m_TagString: Untagged
@@ -510,27 +510,9 @@ MonoBehaviour:
   enemyData: {fileID: 11400000, guid: 74159bbdb8e0901408a64d4104c4c5d0, type: 2}
   enemyType: 0
   movement: {fileID: 3021900957594822675}
-  attack: {fileID: 3185933670624341120}
   health: {fileID: 181268767807876095}
   pooledEnemy: {fileID: 8495419256588217089}
---- !u!114 &3185933670624341120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8964658560660251589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca92b3436d973a459f7e57a723b323c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 320
+  animator: {fileID: 2014562567675386833}
 --- !u!114 &8495419256588217089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,8 +581,26 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: 0.5}
+  m_Radius: 1
+--- !u!114 &6393756599324180932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964658560660251589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96ab24479398eb4ebc2da95e0ecf30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack_toggle
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 320
 --- !u!1 &9019561764846821029
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 3954915215421826335}
   - component: {fileID: 1645475018415707206}
   - component: {fileID: 2014562567675386833}
+  - component: {fileID: 2719867947705143755}
   m_Layer: 9
   m_Name: Renderer
   m_TagString: Untagged
@@ -628,9 +629,9 @@ Transform:
   m_GameObject: {fileID: 9019561764846821029}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 1.84, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7999868715659466859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -714,3 +715,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2719867947705143755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019561764846821029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7428c06c902c64a9496e3872968e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAnimationTrigger

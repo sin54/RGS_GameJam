@@ -8,6 +8,7 @@ public class EnemyHealth : NetworkBehaviour
     [SerializeField] private Image enemyHealthImg;
     [SerializeField] private Transform DmgIndicatorPos;
 
+    [HideInInspector][SyncVar] public bool isDead;
     private EnemyCore Core;
 
     private void Awake()
@@ -28,13 +29,31 @@ public class EnemyHealth : NetworkBehaviour
         GameManager.Instance.spawnManager.SpawnDmgIndicator(DmgIndicatorPos.position, damage);
         if (currentHealth <= 0)
         {
+            isDead = true;
+            Core.movement.StopMove();
+            RpcDeath();
+        }
+    }
+    [Server]
+    public void OnDeath()
+    {
+        if (isServer)
+        {
             Core.pooledEnemy.ServerDespawn();
         }
+
     }
     [ClientRpc]
     private void RpcHit()
     {
     }
+    [ClientRpc]
+    private void RpcDeath()
+    {
+        gameObject.layer = 11;
+        Core.animator.SetTrigger("Dead");
+    }
+
     private void OnHealthChanged(int oldValue, int newValue)
     {
         enemyHealthImg.fillAmount = (float)currentHealth / Core.enemyData.maxHealth;

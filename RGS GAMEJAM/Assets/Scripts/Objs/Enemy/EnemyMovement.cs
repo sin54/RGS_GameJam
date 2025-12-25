@@ -6,7 +6,8 @@ public class EnemyMovement : NetworkBehaviour
     private Transform mainTarget;
     [HideInInspector] public Transform currentTarget;
     private EnemyCore Core;
-
+    private bool canMove;
+    [SyncVar(hook = nameof(OnFlipChanged))] private bool flipX;
     private void Awake()
     {
         Core = GetComponent<EnemyCore>();
@@ -16,11 +17,14 @@ public class EnemyMovement : NetworkBehaviour
     private void Start()
     {
         mainTarget = GameObject.FindGameObjectWithTag("mainTree").transform;
+        canMove = true;
+        flipX = false;
     }
 
     private void FixedUpdate()
     {
         if (!isServer) return;
+        if (!canMove) return;
 
         UpdateAgroTarget();
 
@@ -36,6 +40,15 @@ public class EnemyMovement : NetworkBehaviour
         }
 
         rb.MovePosition(rb.position + dir * Core.enemyData.moveSpeed * Time.fixedDeltaTime);
+
+        if (dir.x < 0)
+        {
+            flipX = true;
+        }
+        else
+        {
+            flipX = false;
+        }
     }
 
     private void UpdateAgroTarget()
@@ -74,6 +87,19 @@ public class EnemyMovement : NetworkBehaviour
         }
 
         currentTarget = nearest;
+    }
+    public void StopMove()
+    {
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
+    }
+    public void ReMove()
+    {
+        canMove = true;
+    }
+    private void OnFlipChanged(bool oldValue, bool newValue)
+    {
+        Core.SR.flipX = newValue;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
