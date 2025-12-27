@@ -1,0 +1,1060 @@
+PortableSSD 볼륨에 대한 폴더 경로의 목록입니다.
+볼륨 일련 번호는 F693-8AF5입니다.
+D:.
+│  .DS_Store
+│  GameScene.meta
+│  LobbySprites.meta
+│  PlayerSprite.meta
+│  Shapes.meta
+│  TileSprites_Test.meta
+│  UISprites.meta
+│  Enemies.meta
+│  project_structure.txt
+│  
+├─GameScene
+│  │  Credits.meta
+│  │  UI.meta
+│  │  Tower.meta
+│  │  Bullets.meta
+│  │  Objects.meta
+│  │  Pings.meta
+│  │  
+│  ├─Credits
+│  │      stick.png
+│  │      stick.png.meta
+│  │      namutip.png
+│  │      namutip.png.meta
+│  │      seolgaydo.png
+│  │      seolgaydo.png.meta
+│  │      stone.png
+│  │      stone.png.meta
+│  │      
+│  ├─UI
+│  │      RedSquare.png
+│  │      RedSquare.png.meta
+│  │      hp_bar.png
+│  │      hp_bar.png.meta
+│  │      hp_bar_anjjog.png
+│  │      hp_bar_anjjog.png.meta
+│  │      
+│  ├─Tower
+│  │  │  wood_fence.png
+│  │  │  wood_fence.png.meta
+│  │  │  CampFire.meta
+│  │  │  WoodFence.meta
+│  │  │  
+│  │  ├─CampFire
+│  │  │      campfire_1.png
+│  │  │      campfire_1.png.meta
+│  │  │      campfire_2.png
+│  │  │      campfire_2.png.meta
+│  │  │      campfire_3.png
+│  │  │      campfire_3.png.meta
+│  │  │      campfire_4.png
+│  │  │      campfire_4.png.meta
+│  │  │      campfire_5.png
+│  │  │      campfire_5.png.meta
+│  │  │      
+│  │  └─WoodFence
+│  │          wood_fence_1.png
+│  │          wood_fence_1.png.meta
+│  │          wood_fence_2.png
+│  │          wood_fence_2.png.meta
+│  │          wood_fence_3.png
+│  │          wood_fence_3.png.meta
+│  │          wood_fence_4.png
+│  │          wood_fence_4.png.meta
+│  │          wood_fence_5.png
+│  │          wood_fence_5.png.meta
+│  │          
+│  ├─Bullets
+│  │      fire.png
+│  │      fire.png.meta
+│  │      
+│  ├─Objects
+│  │      crafting_table.png
+│  │      crafting_table.png.meta
+│  │      item_box_open-Sheet.png
+│  │      item_box_open-Sheet.png.meta
+│  │      
+│  └─Pings
+│          ganunjung_ping.png
+│          ganunjung_ping.png.meta
+│          jiwon_ping.png
+│          jiwon_ping.png.meta
+│          mia_ping.png
+│          mia_ping.png.meta
+│          subi_ping.png
+│          subi_ping.png.meta
+│          
+├─LobbySprites
+│  │  Materials.meta
+│  │  RGS_door 1.png
+│  │  RGS_door 1.png.meta
+│  │  RGS_door.png
+│  │  RGS_door.png.meta
+│  │  crown.png
+│  │  crown.png.meta
+│  │  wooden_sign_letter.png
+│  │  wooden_sign_letter.png.meta
+│  │  
+│  └─Materials
+│          wooden_sign_letter.mat
+│          wooden_sign_letter.mat.meta
+│          
+├─PlayerSprite
+│  │  Bear.meta
+│  │  Fox.meta
+│  │  Otter.meta
+│  │  Sheep.meta
+│  │  
+│  ├─Bear
+│  │  │  bear_head.png
+│  │  │  bear_head.png.meta
+│  │  │  bear_moving_backward.png
+│  │  │  bear_moving_backward.png.meta
+│  │  │  bear_moving_forward.png
+│  │  │  bear_moving_forward.png.meta
+│  │  │  bear_moving_side.png
+│  │  │  bear_moving_side.png.meta
+│  │  │  bear_standing_backward.png
+│  │  │  bear_standing_backward.png.meta
+│  │  │  bear_standing_forward.png
+│  │  │  bear_standing_forward.png.meta
+│  │  │  bear_standing_side.png
+│  │  │  bear_standing_side.png.meta
+│  │  │  bear_stunning.png
+│  │  │  bear_stunning.png.meta
+│  │  │  bear_working.png
+│  │  │  bear_working.png.meta
+│  │  │  NewBear.meta
+│  │  │  
+│  │  └─NewBear
+│  │          bear_moving_backward-Sheet.png
+│  │          bear_moving_backward-Sheet.png.meta
+│  │          bear_moving_forward-Sheet.png
+│  │          bear_moving_forward-Sheet.png.meta
+│  │          bear_moving_side-Sheet.png
+│  │          bear_moving_side-Sheet.png.meta
+│  │          bear_working-Sheet.png
+│  │          bear_working-Sheet.png.meta
+│  │          
+│  ├─Fox
+│  │      fox_head.png
+│  │      fox_head.png.meta
+│  │      fox_moving_backward.png
+│  │      fox_moving_backward.png.meta
+│  │      fox_moving_forward.png
+│  │      fox_moving_forward.png.meta
+│  │      fox_moving_side.png
+│  │      fox_moving_side.png.meta
+│  │      fox_standing_backward.png
+│  │      fox_standing_backward.png.meta
+│  │      fox_standing_forward.png
+│  │      fox_standing_forward.png.meta
+│  │      fox_standing_side.png
+│  │      fox_standing_side.png.meta
+│  │      fox_stunning.png
+│  │      fox_stunning.png.meta
+│  │      fox_working.png
+│  │      fox_working.png.meta
+│  │      Fox_working.anim
+│  │      Fox_working.anim.meta
+│  │      fox_moving_backward-Sheet.png
+│  │      fox_moving_backward-Sheet.png.meta
+│  │      fox_moving_forward-Sheet.png
+│  │      fox_moving_forward-Sheet.png.meta
+│  │      fox_moving_side-Sheet.png
+│  │      fox_moving_side-Sheet.png.meta
+│  │      fox_working-Sheet.png
+│  │      fox_working-Sheet.png.meta
+│  │      
+│  ├─Otter
+│  │      otter_moving_backward-Sheet.png
+│  │      otter_moving_backward-Sheet.png.meta
+│  │      otter_moving_forward-Sheet.png
+│  │      otter_moving_forward-Sheet.png.meta
+│  │      otter_moving_side-Sheet.png
+│  │      otter_moving_side-Sheet.png.meta
+│  │      otter_working-Sheet.png
+│  │      otter_working-Sheet.png.meta
+│  │      
+│  └─Sheep
+│          sheep_move_back.png
+│          sheep_move_back.png.meta
+│          sheep_move_forward.png
+│          sheep_move_forward.png.meta
+│          sheep_move_side.png
+│          sheep_move_side.png.meta
+│          sheep_standing_forward_Sheet.png
+│          sheep_standing_forward_Sheet.png.meta
+│          sheep_working.png
+│          sheep_working.png.meta
+│          
+├─Shapes
+│      Circle.png
+│      Circle.png.meta
+│      Square.png
+│      Square.png.meta
+│      
+├─TileSprites_Test
+│  │  Basic.meta
+│  │  ColliderSprites.meta
+│  │  Desert.meta
+│  │  FrozenCave.meta
+│  │  FrozenMountain.meta
+│  │  Plains.meta
+│  │  Temple.meta
+│  │  
+│  ├─Basic
+│  │  │  .DS_Store
+│  │  │  Flat.meta
+│  │  │  Raised.meta
+│  │  │  
+│  │  ├─Flat
+│  │  │      base00.png
+│  │  │      base00.png.meta
+│  │  │      base01.png
+│  │  │      base01.png.meta
+│  │  │      base02.png
+│  │  │      base02.png.meta
+│  │  │      base03.png
+│  │  │      base03.png.meta
+│  │  │      base04.png
+│  │  │      base04.png.meta
+│  │  │      base05.png
+│  │  │      base05.png.meta
+│  │  │      base06.png
+│  │  │      base06.png.meta
+│  │  │      base07.png
+│  │  │      base07.png.meta
+│  │  │      base08.png
+│  │  │      base08.png.meta
+│  │  │      base09.png
+│  │  │      base09.png.meta
+│  │  │      base10.png
+│  │  │      base10.png.meta
+│  │  │      base11.png
+│  │  │      base11.png.meta
+│  │  │      base12.png
+│  │  │      base12.png.meta
+│  │  │      base13.png
+│  │  │      base13.png.meta
+│  │  │      base14.png
+│  │  │      base14.png.meta
+│  │  │      base15.png
+│  │  │      base15.png.meta
+│  │  │      base16.png
+│  │  │      base16.png.meta
+│  │  │      
+│  │  └─Raised
+│  │          cube00.png
+│  │          cube00.png.meta
+│  │          cube01.png
+│  │          cube01.png.meta
+│  │          cube02.png
+│  │          cube02.png.meta
+│  │          cube03.png
+│  │          cube03.png.meta
+│  │          cube04.png
+│  │          cube04.png.meta
+│  │          cube05.png
+│  │          cube05.png.meta
+│  │          cube06.png
+│  │          cube06.png.meta
+│  │          cube07.png
+│  │          cube07.png.meta
+│  │          cube08.png
+│  │          cube08.png.meta
+│  │          cube09.png
+│  │          cube09.png.meta
+│  │          cube10.png
+│  │          cube10.png.meta
+│  │          cube11.png
+│  │          cube11.png.meta
+│  │          cube12.png
+│  │          cube12.png.meta
+│  │          cube13.png
+│  │          cube13.png.meta
+│  │          cube14.png
+│  │          cube14.png.meta
+│  │          cube15.png
+│  │          cube15.png.meta
+│  │          cube16.png
+│  │          cube16.png.meta
+│  │          slope1.png
+│  │          slope1.png.meta
+│  │          slope2.png
+│  │          slope2.png.meta
+│  │          
+│  ├─ColliderSprites
+│  │      slope-a.png
+│  │      slope-a.png.meta
+│  │      stairs-border.png
+│  │      stairs-border.png.meta
+│  │      stairs-collider-a.png
+│  │      stairs-collider-a.png.meta
+│  │      tile-border-horizontal.png
+│  │      tile-border-horizontal.png.meta
+│  │      tile-border-left.png
+│  │      tile-border-left.png.meta
+│  │      tile-border-right.png
+│  │      tile-border-right.png.meta
+│  │      tile-border-top.png
+│  │      tile-border-top.png.meta
+│  │      tile-border-vertical.png
+│  │      tile-border-vertical.png.meta
+│  │      tile-full.png
+│  │      tile-full.png.meta
+│  │      tile-half-1.png
+│  │      tile-half-1.png.meta
+│  │      tile-half-2.png
+│  │      tile-half-2.png.meta
+│  │      tile-half-3.png
+│  │      tile-half-3.png.meta
+│  │      tile-half-4.png
+│  │      tile-half-4.png.meta
+│  │      tile-wall-1.png
+│  │      tile-wall-1.png.meta
+│  │      tile-wall-2.png
+│  │      tile-wall-2.png.meta
+│  │      
+│  ├─Desert
+│  │  │  Decoration.meta
+│  │  │  Flat.meta
+│  │  │  Raised.meta
+│  │  │  
+│  │  ├─Decoration
+│  │  │      desert-sliced_22.png
+│  │  │      desert-sliced_22.png.meta
+│  │  │      desert-sliced_23.png
+│  │  │      desert-sliced_23.png.meta
+│  │  │      desert-sliced_46.png
+│  │  │      desert-sliced_46.png.meta
+│  │  │      desert-sliced_47.png
+│  │  │      desert-sliced_47.png.meta
+│  │  │      desert-sliced_48.png
+│  │  │      desert-sliced_48.png.meta
+│  │  │      desert-sliced_49.png
+│  │  │      desert-sliced_49.png.meta
+│  │  │      desert-sliced_50.png
+│  │  │      desert-sliced_50.png.meta
+│  │  │      desert-sliced_51.png
+│  │  │      desert-sliced_51.png.meta
+│  │  │      desert-sliced_54.png
+│  │  │      desert-sliced_54.png.meta
+│  │  │      desert-sliced_55.png
+│  │  │      desert-sliced_55.png.meta
+│  │  │      desert-sliced_56.png
+│  │  │      desert-sliced_56.png.meta
+│  │  │      desert-sliced_57.png
+│  │  │      desert-sliced_57.png.meta
+│  │  │      desert-sliced_58.png
+│  │  │      desert-sliced_58.png.meta
+│  │  │      desert-sliced_59.png
+│  │  │      desert-sliced_59.png.meta
+│  │  │      desert-sliced_60.png
+│  │  │      desert-sliced_60.png.meta
+│  │  │      desert-sliced_61.png
+│  │  │      desert-sliced_61.png.meta
+│  │  │      desert-sliced_62.png
+│  │  │      desert-sliced_62.png.meta
+│  │  │      desert-sliced_63.png
+│  │  │      desert-sliced_63.png.meta
+│  │  │      desert-sliced_64.png
+│  │  │      desert-sliced_64.png.meta
+│  │  │      desert-sliced_65.png
+│  │  │      desert-sliced_65.png.meta
+│  │  │      desert-sliced_66.png
+│  │  │      desert-sliced_66.png.meta
+│  │  │      desert-sliced_67.png
+│  │  │      desert-sliced_67.png.meta
+│  │  │      
+│  │  ├─Flat
+│  │  │      desert-sliced_01.png
+│  │  │      desert-sliced_01.png.meta
+│  │  │      desert-sliced_02.png
+│  │  │      desert-sliced_02.png.meta
+│  │  │      desert-sliced_03.png
+│  │  │      desert-sliced_03.png.meta
+│  │  │      desert-sliced_04.png
+│  │  │      desert-sliced_04.png.meta
+│  │  │      desert-sliced_05.png
+│  │  │      desert-sliced_05.png.meta
+│  │  │      desert-sliced_06.png
+│  │  │      desert-sliced_06.png.meta
+│  │  │      desert-sliced_07.png
+│  │  │      desert-sliced_07.png.meta
+│  │  │      desert-sliced_08.png
+│  │  │      desert-sliced_08.png.meta
+│  │  │      desert-sliced_09.png
+│  │  │      desert-sliced_09.png.meta
+│  │  │      desert-sliced_10.png
+│  │  │      desert-sliced_10.png.meta
+│  │  │      desert-sliced_11.png
+│  │  │      desert-sliced_11.png.meta
+│  │  │      desert-sliced_12.png
+│  │  │      desert-sliced_12.png.meta
+│  │  │      desert-sliced_13.png
+│  │  │      desert-sliced_13.png.meta
+│  │  │      desert-sliced_14.png
+│  │  │      desert-sliced_14.png.meta
+│  │  │      desert-sliced_15.png
+│  │  │      desert-sliced_15.png.meta
+│  │  │      desert-sliced_16.png
+│  │  │      desert-sliced_16.png.meta
+│  │  │      desert-sliced_17.png
+│  │  │      desert-sliced_17.png.meta
+│  │  │      desert-sliced_18.png
+│  │  │      desert-sliced_18.png.meta
+│  │  │      desert-sliced_19.png
+│  │  │      desert-sliced_19.png.meta
+│  │  │      desert-sliced_20.png
+│  │  │      desert-sliced_20.png.meta
+│  │  │      desert-sliced_21.png
+│  │  │      desert-sliced_21.png.meta
+│  │  │      
+│  │  └─Raised
+│  │          desert-sliced_25.png
+│  │          desert-sliced_25.png.meta
+│  │          desert-sliced_26.png
+│  │          desert-sliced_26.png.meta
+│  │          desert-sliced_27.png
+│  │          desert-sliced_27.png.meta
+│  │          desert-sliced_28.png
+│  │          desert-sliced_28.png.meta
+│  │          desert-sliced_29.png
+│  │          desert-sliced_29.png.meta
+│  │          desert-sliced_30.png
+│  │          desert-sliced_30.png.meta
+│  │          desert-sliced_31.png
+│  │          desert-sliced_31.png.meta
+│  │          desert-sliced_32.png
+│  │          desert-sliced_32.png.meta
+│  │          desert-sliced_33.png
+│  │          desert-sliced_33.png.meta
+│  │          desert-sliced_34.png
+│  │          desert-sliced_34.png.meta
+│  │          desert-sliced_35.png
+│  │          desert-sliced_35.png.meta
+│  │          desert-sliced_36.png
+│  │          desert-sliced_36.png.meta
+│  │          desert-sliced_37.png
+│  │          desert-sliced_37.png.meta
+│  │          desert-sliced_38.png
+│  │          desert-sliced_38.png.meta
+│  │          desert-sliced_39.png
+│  │          desert-sliced_39.png.meta
+│  │          desert-sliced_40.png
+│  │          desert-sliced_40.png.meta
+│  │          desert-sliced_41.png
+│  │          desert-sliced_41.png.meta
+│  │          desert-sliced_42.png
+│  │          desert-sliced_42.png.meta
+│  │          desert-sliced_43.png
+│  │          desert-sliced_43.png.meta
+│  │          desert-sliced_44.png
+│  │          desert-sliced_44.png.meta
+│  │          desert-sliced_45.png
+│  │          desert-sliced_45.png.meta
+│  │          desert-sliced_52.png
+│  │          desert-sliced_52.png.meta
+│  │          desert-sliced_53.png
+│  │          desert-sliced_53.png.meta
+│  │          
+│  ├─FrozenCave
+│  │  │  Decoration.meta
+│  │  │  Raised.meta
+│  │  │  Wall.meta
+│  │  │  
+│  │  ├─Decoration
+│  │  │      cave-sliced_22.png
+│  │  │      cave-sliced_22.png.meta
+│  │  │      cave-sliced_23.png
+│  │  │      cave-sliced_23.png.meta
+│  │  │      cave-sliced_24.png
+│  │  │      cave-sliced_24.png.meta
+│  │  │      cave-sliced_25.png
+│  │  │      cave-sliced_25.png.meta
+│  │  │      cave-sliced_26.png
+│  │  │      cave-sliced_26.png.meta
+│  │  │      cave-sliced_27.png
+│  │  │      cave-sliced_27.png.meta
+│  │  │      cave-sliced_30.png
+│  │  │      cave-sliced_30.png.meta
+│  │  │      cave-sliced_31.png
+│  │  │      cave-sliced_31.png.meta
+│  │  │      cave-sliced_32.png
+│  │  │      cave-sliced_32.png.meta
+│  │  │      
+│  │  ├─Raised
+│  │  │      cave-sliced_01.png
+│  │  │      cave-sliced_01.png.meta
+│  │  │      cave-sliced_02.png
+│  │  │      cave-sliced_02.png.meta
+│  │  │      cave-sliced_03.png
+│  │  │      cave-sliced_03.png.meta
+│  │  │      cave-sliced_04.png
+│  │  │      cave-sliced_04.png.meta
+│  │  │      cave-sliced_05.png
+│  │  │      cave-sliced_05.png.meta
+│  │  │      cave-sliced_06.png
+│  │  │      cave-sliced_06.png.meta
+│  │  │      cave-sliced_07.png
+│  │  │      cave-sliced_07.png.meta
+│  │  │      cave-sliced_08.png
+│  │  │      cave-sliced_08.png.meta
+│  │  │      cave-sliced_09.png
+│  │  │      cave-sliced_09.png.meta
+│  │  │      cave-sliced_10.png
+│  │  │      cave-sliced_10.png.meta
+│  │  │      cave-sliced_11.png
+│  │  │      cave-sliced_11.png.meta
+│  │  │      cave-sliced_12.png
+│  │  │      cave-sliced_12.png.meta
+│  │  │      cave-sliced_13.png
+│  │  │      cave-sliced_13.png.meta
+│  │  │      cave-sliced_14.png
+│  │  │      cave-sliced_14.png.meta
+│  │  │      cave-sliced_15.png
+│  │  │      cave-sliced_15.png.meta
+│  │  │      cave-sliced_16.png
+│  │  │      cave-sliced_16.png.meta
+│  │  │      cave-sliced_17.png
+│  │  │      cave-sliced_17.png.meta
+│  │  │      cave-sliced_18.png
+│  │  │      cave-sliced_18.png.meta
+│  │  │      cave-sliced_19.png
+│  │  │      cave-sliced_19.png.meta
+│  │  │      cave-sliced_20.png
+│  │  │      cave-sliced_20.png.meta
+│  │  │      cave-sliced_21.png
+│  │  │      cave-sliced_21.png.meta
+│  │  │      cave-sliced_28.png
+│  │  │      cave-sliced_28.png.meta
+│  │  │      cave-sliced_29.png
+│  │  │      cave-sliced_29.png.meta
+│  │  │      
+│  │  └─Wall
+│  │          cave-sliced_33.png
+│  │          cave-sliced_33.png.meta
+│  │          cave-sliced_34.png
+│  │          cave-sliced_34.png.meta
+│  │          cave-sliced_35.png
+│  │          cave-sliced_35.png.meta
+│  │          cave-sliced_36.png
+│  │          cave-sliced_36.png.meta
+│  │          cave-sliced_37.png
+│  │          cave-sliced_37.png.meta
+│  │          cave-sliced_38.png
+│  │          cave-sliced_38.png.meta
+│  │          cave-sliced_39.png
+│  │          cave-sliced_39.png.meta
+│  │          cave-sliced_40.png
+│  │          cave-sliced_40.png.meta
+│  │          cave-sliced_41.png
+│  │          cave-sliced_41.png.meta
+│  │          cave-sliced_42.png
+│  │          cave-sliced_42.png.meta
+│  │          cave-sliced_43.png
+│  │          cave-sliced_43.png.meta
+│  │          
+│  ├─FrozenMountain
+│  │  │  Decoration.meta
+│  │  │  Flat.meta
+│  │  │  Raised.meta
+│  │  │  
+│  │  ├─Decoration
+│  │  │      background_mountain_1.png
+│  │  │      background_mountain_1.png.meta
+│  │  │      background_mountain_2.png
+│  │  │      background_mountain_2.png.meta
+│  │  │      background_sky.png
+│  │  │      background_sky.png.meta
+│  │  │      decoration_rock_1.png
+│  │  │      decoration_rock_1.png.meta
+│  │  │      decoration_rock_1_mask.png
+│  │  │      decoration_rock_1_mask.png.meta
+│  │  │      decoration_rock_2.png
+│  │  │      decoration_rock_2.png.meta
+│  │  │      decoration_rock_2_mask.png
+│  │  │      decoration_rock_2_mask.png.meta
+│  │  │      decoration_rock_NW.png
+│  │  │      decoration_rock_NW.png.meta
+│  │  │      decoration_rock_NW_mask.png
+│  │  │      decoration_rock_NW_mask.png.meta
+│  │  │      decoration_snowcap_rock_1.png
+│  │  │      decoration_snowcap_rock_1.png.meta
+│  │  │      decoration_snowcap_rock_1_mask.png
+│  │  │      decoration_snowcap_rock_1_mask.png.meta
+│  │  │      decoration_snowcap_rock_2.png
+│  │  │      decoration_snowcap_rock_2.png.meta
+│  │  │      decoration_snowcap_rock_2_mask.png
+│  │  │      decoration_snowcap_rock_2_mask.png.meta
+│  │  │      decoration_sword_in_the_stone.png
+│  │  │      decoration_sword_in_the_stone.png.meta
+│  │  │      decoration_sword_in_the_stone_mask.png
+│  │  │      decoration_sword_in_the_stone_mask.png.meta
+│  │  │      tree_cypress-bottom.png
+│  │  │      tree_cypress-bottom.png.meta
+│  │  │      tree_cypress-top.png
+│  │  │      tree_cypress-top.png.meta
+│  │  │      tree_cypress.png
+│  │  │      tree_cypress.png.meta
+│  │  │      tree_cypress_mask.png
+│  │  │      tree_cypress_mask.png.meta
+│  │  │      tree_fir.png
+│  │  │      tree_fir.png.meta
+│  │  │      tree_fir_mask.png
+│  │  │      tree_fir_mask.png.meta
+│  │  │      tree_spruce.png
+│  │  │      tree_spruce.png.meta
+│  │  │      tree_spruce_mask.png
+│  │  │      tree_spruce_mask.png.meta
+│  │  │      
+│  │  ├─Flat
+│  │  │      mountain_0.png
+│  │  │      mountain_0.png.meta
+│  │  │      mountain_1.png
+│  │  │      mountain_1.png.meta
+│  │  │      mountain_2.png
+│  │  │      mountain_2.png.meta
+│  │  │      mountain_3.png
+│  │  │      mountain_3.png.meta
+│  │  │      mountain_4.png
+│  │  │      mountain_4.png.meta
+│  │  │      snow_E.png
+│  │  │      snow_E.png.meta
+│  │  │      snow_E_inner.png
+│  │  │      snow_E_inner.png.meta
+│  │  │      snow_N.png
+│  │  │      snow_N.png.meta
+│  │  │      snow_NE.png
+│  │  │      snow_NE.png.meta
+│  │  │      snow_NW.png
+│  │  │      snow_NW.png.meta
+│  │  │      snow_N_inner.png
+│  │  │      snow_N_inner.png.meta
+│  │  │      snow_S.png
+│  │  │      snow_S.png.meta
+│  │  │      snow_SE.png
+│  │  │      snow_SE.png.meta
+│  │  │      snow_SW.png
+│  │  │      snow_SW.png.meta
+│  │  │      snow_S_inner.png
+│  │  │      snow_S_inner.png.meta
+│  │  │      snow_W.png
+│  │  │      snow_W.png.meta
+│  │  │      snow_W_inner.png
+│  │  │      snow_W_inner.png.meta
+│  │  │      snow_center_0.png
+│  │  │      snow_center_0.png.meta
+│  │  │      snow_center_1.png
+│  │  │      snow_center_1.png.meta
+│  │  │      snow_center_2.png
+│  │  │      snow_center_2.png.meta
+│  │  │      snow_center_3.png
+│  │  │      snow_center_3.png.meta
+│  │  │      snow_center_4.png
+│  │  │      snow_center_4.png.meta
+│  │  │      snow_corner_E.png
+│  │  │      snow_corner_E.png.meta
+│  │  │      snow_corner_N.png
+│  │  │      snow_corner_N.png.meta
+│  │  │      snow_corner_S.png
+│  │  │      snow_corner_S.png.meta
+│  │  │      snow_corner_W.png
+│  │  │      snow_corner_W.png.meta
+│  │  │      
+│  │  └─Raised
+│  │          elevation_snow_E.png
+│  │          elevation_snow_E.png.meta
+│  │          elevation_snow_E_inner.png
+│  │          elevation_snow_E_inner.png.meta
+│  │          elevation_snow_N.png
+│  │          elevation_snow_N.png.meta
+│  │          elevation_snow_NE.png
+│  │          elevation_snow_NE.png.meta
+│  │          elevation_snow_NW.png
+│  │          elevation_snow_NW.png.meta
+│  │          elevation_snow_N_inner.png
+│  │          elevation_snow_N_inner.png.meta
+│  │          elevation_snow_S.png
+│  │          elevation_snow_S.png.meta
+│  │          elevation_snow_S_inner.png
+│  │          elevation_snow_S_inner.png.meta
+│  │          elevation_snow_W.png
+│  │          elevation_snow_W.png.meta
+│  │          elevation_snow_W_inner.png
+│  │          elevation_snow_W_inner.png.meta
+│  │          elevation_snow_center_0.png
+│  │          elevation_snow_center_0.png.meta
+│  │          elevation_snow_center_1.png
+│  │          elevation_snow_center_1.png.meta
+│  │          elevation_snow_center_2.png
+│  │          elevation_snow_center_2.png.meta
+│  │          elevation_snow_corner_E.png
+│  │          elevation_snow_corner_E.png.meta
+│  │          elevation_snow_corner_N.png
+│  │          elevation_snow_corner_N.png.meta
+│  │          elevation_snow_corner_S.png
+│  │          elevation_snow_corner_S.png.meta
+│  │          elevation_snow_corner_SE.png
+│  │          elevation_snow_corner_SE.png.meta
+│  │          elevation_snow_corner_SW.png
+│  │          elevation_snow_corner_SW.png.meta
+│  │          elevation_snow_corner_W.png
+│  │          elevation_snow_corner_W.png.meta
+│  │          slope_NE.png
+│  │          slope_NE.png.meta
+│  │          slope_NW.png
+│  │          slope_NW.png.meta
+│  │          slope_NW_mask.png
+│  │          slope_NW_mask.png.meta
+│  │          
+│  ├─Plains
+│  │  │  Decoration.meta
+│  │  │  Flat.meta
+│  │  │  Raised.meta
+│  │  │  
+│  │  ├─Decoration
+│  │  │      plains-sliced_63.png
+│  │  │      plains-sliced_63.png.meta
+│  │  │      plains-sliced_64.png
+│  │  │      plains-sliced_64.png.meta
+│  │  │      plains-sliced_65.png
+│  │  │      plains-sliced_65.png.meta
+│  │  │      plains-sliced_66.png
+│  │  │      plains-sliced_66.png.meta
+│  │  │      plains-sliced_67.png
+│  │  │      plains-sliced_67.png.meta
+│  │  │      plains-sliced_68.png
+│  │  │      plains-sliced_68.png.meta
+│  │  │      plains-sliced_69.png
+│  │  │      plains-sliced_69.png.meta
+│  │  │      plains-sliced_70.png
+│  │  │      plains-sliced_70.png.meta
+│  │  │      plains-sliced_74.png
+│  │  │      plains-sliced_74.png.meta
+│  │  │      
+│  │  ├─Flat
+│  │  │      floor.png
+│  │  │      floor.png.meta
+│  │  │      plains-sliced_01.png
+│  │  │      plains-sliced_01.png.meta
+│  │  │      plains-sliced_02.png
+│  │  │      plains-sliced_02.png.meta
+│  │  │      plains-sliced_03.png
+│  │  │      plains-sliced_03.png.meta
+│  │  │      plains-sliced_04.png
+│  │  │      plains-sliced_04.png.meta
+│  │  │      plains-sliced_05.png
+│  │  │      plains-sliced_05.png.meta
+│  │  │      plains-sliced_06.png
+│  │  │      plains-sliced_06.png.meta
+│  │  │      plains-sliced_07.png
+│  │  │      plains-sliced_07.png.meta
+│  │  │      plains-sliced_08.png
+│  │  │      plains-sliced_08.png.meta
+│  │  │      plains-sliced_09.png
+│  │  │      plains-sliced_09.png.meta
+│  │  │      plains-sliced_10.png
+│  │  │      plains-sliced_10.png.meta
+│  │  │      plains-sliced_11.png
+│  │  │      plains-sliced_11.png.meta
+│  │  │      plains-sliced_12.png
+│  │  │      plains-sliced_12.png.meta
+│  │  │      plains-sliced_13.png
+│  │  │      plains-sliced_13.png.meta
+│  │  │      plains-sliced_14.png
+│  │  │      plains-sliced_14.png.meta
+│  │  │      plains-sliced_15.png
+│  │  │      plains-sliced_15.png.meta
+│  │  │      plains-sliced_16.png
+│  │  │      plains-sliced_16.png.meta
+│  │  │      plains-sliced_17.png
+│  │  │      plains-sliced_17.png.meta
+│  │  │      plains-sliced_18.png
+│  │  │      plains-sliced_18.png.meta
+│  │  │      plains-sliced_19.png
+│  │  │      plains-sliced_19.png.meta
+│  │  │      plains-sliced_20.png
+│  │  │      plains-sliced_20.png.meta
+│  │  │      plains-sliced_21.png
+│  │  │      plains-sliced_21.png.meta
+│  │  │      plains-sliced_22.png
+│  │  │      plains-sliced_22.png.meta
+│  │  │      plains-sliced_23.png
+│  │  │      plains-sliced_23.png.meta
+│  │  │      plains-sliced_24.png
+│  │  │      plains-sliced_24.png.meta
+│  │  │      plains-sliced_25.png
+│  │  │      plains-sliced_25.png.meta
+│  │  │      plains-sliced_26.png
+│  │  │      plains-sliced_26.png.meta
+│  │  │      plains-sliced_27.png
+│  │  │      plains-sliced_27.png.meta
+│  │  │      plains-sliced_28.png
+│  │  │      plains-sliced_28.png.meta
+│  │  │      plains-sliced_29.png
+│  │  │      plains-sliced_29.png.meta
+│  │  │      plains-sliced_30.png
+│  │  │      plains-sliced_30.png.meta
+│  │  │      plains-sliced_31.png
+│  │  │      plains-sliced_31.png.meta
+│  │  │      plains-sliced_32.png
+│  │  │      plains-sliced_32.png.meta
+│  │  │      plains-sliced_33.png
+│  │  │      plains-sliced_33.png.meta
+│  │  │      plains-sliced_34.png
+│  │  │      plains-sliced_34.png.meta
+│  │  │      plains-sliced_35.png
+│  │  │      plains-sliced_35.png.meta
+│  │  │      plains-sliced_36.png
+│  │  │      plains-sliced_36.png.meta
+│  │  │      plains-sliced_37.png
+│  │  │      plains-sliced_37.png.meta
+│  │  │      plains-sliced_38.png
+│  │  │      plains-sliced_38.png.meta
+│  │  │      plains-sliced_39.png
+│  │  │      plains-sliced_39.png.meta
+│  │  │      plains-sliced_40.png
+│  │  │      plains-sliced_40.png.meta
+│  │  │      
+│  │  └─Raised
+│  │          plains-sliced_41.png
+│  │          plains-sliced_41.png.meta
+│  │          plains-sliced_42.png
+│  │          plains-sliced_42.png.meta
+│  │          plains-sliced_43.png
+│  │          plains-sliced_43.png.meta
+│  │          plains-sliced_44.png
+│  │          plains-sliced_44.png.meta
+│  │          plains-sliced_45.png
+│  │          plains-sliced_45.png.meta
+│  │          plains-sliced_46.png
+│  │          plains-sliced_46.png.meta
+│  │          plains-sliced_47.png
+│  │          plains-sliced_47.png.meta
+│  │          plains-sliced_48.png
+│  │          plains-sliced_48.png.meta
+│  │          plains-sliced_49.png
+│  │          plains-sliced_49.png.meta
+│  │          plains-sliced_50.png
+│  │          plains-sliced_50.png.meta
+│  │          plains-sliced_51.png
+│  │          plains-sliced_51.png.meta
+│  │          plains-sliced_52.png
+│  │          plains-sliced_52.png.meta
+│  │          plains-sliced_53.png
+│  │          plains-sliced_53.png.meta
+│  │          plains-sliced_54.png
+│  │          plains-sliced_54.png.meta
+│  │          plains-sliced_55.png
+│  │          plains-sliced_55.png.meta
+│  │          plains-sliced_56.png
+│  │          plains-sliced_56.png.meta
+│  │          plains-sliced_57.png
+│  │          plains-sliced_57.png.meta
+│  │          plains-sliced_58.png
+│  │          plains-sliced_58.png.meta
+│  │          plains-sliced_59.png
+│  │          plains-sliced_59.png.meta
+│  │          plains-sliced_60.png
+│  │          plains-sliced_60.png.meta
+│  │          plains-sliced_61.png
+│  │          plains-sliced_61.png.meta
+│  │          plains-sliced_62.png
+│  │          plains-sliced_62.png.meta
+│  │          plains-sliced_71.png
+│  │          plains-sliced_71.png.meta
+│  │          plains-sliced_72.png
+│  │          plains-sliced_72.png.meta
+│  │          
+│  └─Temple
+│      │  Decoration.meta
+│      │  Flat.meta
+│      │  MoltenLava_Animation.meta
+│      │  Raised.meta
+│      │  
+│      ├─Decoration
+│      │      statue_cat_NW.png
+│      │      statue_cat_NW.png.meta
+│      │      temple-sliced_39.png
+│      │      temple-sliced_39.png.meta
+│      │      temple-sliced_40.png
+│      │      temple-sliced_40.png.meta
+│      │      temple-sliced_43.png
+│      │      temple-sliced_43.png.meta
+│      │      temple-sliced_44.png
+│      │      temple-sliced_44.png.meta
+│      │      temple-sliced_45.png
+│      │      temple-sliced_45.png.meta
+│      │      temple-sliced_46.png
+│      │      temple-sliced_46.png.meta
+│      │      temple-sliced_47.png
+│      │      temple-sliced_47.png.meta
+│      │      temple-sliced_48.png
+│      │      temple-sliced_48.png.meta
+│      │      temple-sliced_49.png
+│      │      temple-sliced_49.png.meta
+│      │      temple-sliced_68.png
+│      │      temple-sliced_68.png.meta
+│      │      temple-sliced_69.png
+│      │      temple-sliced_69.png.meta
+│      │      treasure_sarcophagus_closed_NW.png
+│      │      treasure_sarcophagus_closed_NW.png.meta
+│      │      treasure_sarcophagus_open_NW.png
+│      │      treasure_sarcophagus_open_NW.png.meta
+│      │      wall_door_NW.png
+│      │      wall_door_NW.png.meta
+│      │      
+│      ├─Flat
+│      │      temple-sliced_01.png
+│      │      temple-sliced_01.png.meta
+│      │      temple-sliced_02.png
+│      │      temple-sliced_02.png.meta
+│      │      temple-sliced_03.png
+│      │      temple-sliced_03.png.meta
+│      │      temple-sliced_04.png
+│      │      temple-sliced_04.png.meta
+│      │      temple-sliced_05.png
+│      │      temple-sliced_05.png.meta
+│      │      temple-sliced_06.png
+│      │      temple-sliced_06.png.meta
+│      │      temple-sliced_07.png
+│      │      temple-sliced_07.png.meta
+│      │      temple-sliced_10.png
+│      │      temple-sliced_10.png.meta
+│      │      temple-sliced_11.png
+│      │      temple-sliced_11.png.meta
+│      │      temple-sliced_12.png
+│      │      temple-sliced_12.png.meta
+│      │      temple-sliced_13.png
+│      │      temple-sliced_13.png.meta
+│      │      temple-sliced_14.png
+│      │      temple-sliced_14.png.meta
+│      │      temple-sliced_15.png
+│      │      temple-sliced_15.png.meta
+│      │      temple-sliced_16.png
+│      │      temple-sliced_16.png.meta
+│      │      temple-sliced_17.png
+│      │      temple-sliced_17.png.meta
+│      │      
+│      ├─MoltenLava_Animation
+│      │      molten_NE_0.png
+│      │      molten_NE_0.png.meta
+│      │      molten_NE_1.png
+│      │      molten_NE_1.png.meta
+│      │      molten_NE_2.png
+│      │      molten_NE_2.png.meta
+│      │      molten_NE_3.png
+│      │      molten_NE_3.png.meta
+│      │      molten_NE_4.png
+│      │      molten_NE_4.png.meta
+│      │      molten_NE_5.png
+│      │      molten_NE_5.png.meta
+│      │      molten_NW_0.png
+│      │      molten_NW_0.png.meta
+│      │      molten_NW_1.png
+│      │      molten_NW_1.png.meta
+│      │      molten_NW_2.png
+│      │      molten_NW_2.png.meta
+│      │      molten_NW_3.png
+│      │      molten_NW_3.png.meta
+│      │      molten_NW_4.png
+│      │      molten_NW_4.png.meta
+│      │      molten_NW_5.png
+│      │      molten_NW_5.png.meta
+│      │      molten_center.png
+│      │      molten_center.png.meta
+│      │      molten_cornerN_0.png
+│      │      molten_cornerN_0.png.meta
+│      │      molten_cornerN_1.png
+│      │      molten_cornerN_1.png.meta
+│      │      molten_cornerN_2.png
+│      │      molten_cornerN_2.png.meta
+│      │      molten_cornerN_3.png
+│      │      molten_cornerN_3.png.meta
+│      │      molten_cornerN_4.png
+│      │      molten_cornerN_4.png.meta
+│      │      molten_cornerN_5.png
+│      │      molten_cornerN_5.png.meta
+│      │      molten_cornerS.png
+│      │      molten_cornerS.png.meta
+│      │      
+│      └─Raised
+│              temple-purpleblock.png
+│              temple-purpleblock.png.meta
+│              temple-sliced_19.png
+│              temple-sliced_19.png.meta
+│              temple-sliced_20.png
+│              temple-sliced_20.png.meta
+│              temple-sliced_21.png
+│              temple-sliced_21.png.meta
+│              temple-sliced_22.png
+│              temple-sliced_22.png.meta
+│              temple-sliced_23.png
+│              temple-sliced_23.png.meta
+│              temple-sliced_24.png
+│              temple-sliced_24.png.meta
+│              temple-sliced_25.png
+│              temple-sliced_25.png.meta
+│              temple-sliced_26.png
+│              temple-sliced_26.png.meta
+│              temple-sliced_27.png
+│              temple-sliced_27.png.meta
+│              temple-sliced_28.png
+│              temple-sliced_28.png.meta
+│              temple-sliced_29.png
+│              temple-sliced_29.png.meta
+│              temple-sliced_30.png
+│              temple-sliced_30.png.meta
+│              temple-sliced_31.png
+│              temple-sliced_31.png.meta
+│              temple-sliced_32.png
+│              temple-sliced_32.png.meta
+│              temple-sliced_33.png
+│              temple-sliced_33.png.meta
+│              temple-sliced_34.png
+│              temple-sliced_34.png.meta
+│              temple-sliced_35.png
+│              temple-sliced_35.png.meta
+│              temple-sliced_36.png
+│              temple-sliced_36.png.meta
+│              temple-sliced_37.png
+│              temple-sliced_37.png.meta
+│              temple-sliced_38.png
+│              temple-sliced_38.png.meta
+│              temple-sliced_41.png
+│              temple-sliced_41.png.meta
+│              temple-sliced_42.png
+│              temple-sliced_42.png.meta
+│              temple-stairs-blue.png
+│              temple-stairs-blue.png.meta
+│              
+├─UISprites
+│      Assist.jpg
+│      Assist.jpg.meta
+│      DefendMf.jpg
+│      DefendMf.jpg.meta
+│      Missing.jpg
+│      Missing.jpg.meta
+│      OnMyWay.jpg
+│      OnMyWay.jpg.meta
+│      asdfasdf.jpg
+│      asdfasdf.jpg.meta
+│      
+└─Enemies
+    │  logger.meta
+    │  
+    └─logger
+            logger_attacking.png
+            logger_attacking.png.meta
+            logger_fleeing.png
+            logger_fleeing.png.meta
+            logger_moving.png
+            logger_moving.png.meta
+            Logger_fleeing_new.png
+            Logger_fleeing_new.png.meta
+            
