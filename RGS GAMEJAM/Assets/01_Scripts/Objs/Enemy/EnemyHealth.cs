@@ -15,11 +15,9 @@ public class EnemyHealth : NetworkBehaviour
     {
         Core = GetComponent<EnemyCore>();
     }
-    public override void OnStartServer()
+    public void Init()
     {
-        base.OnStartServer();
         currentHealth = Core.enemyData.maxHealth;
-
     }
     [Server]
     public void TakeDamage(int damage)
@@ -39,7 +37,7 @@ public class EnemyHealth : NetworkBehaviour
     {
         if (isServer)
         {
-            Core.pooledEnemy.ServerDespawn();
+            Core.BPO.ServerDespawn();
         }
 
     }

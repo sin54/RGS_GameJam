@@ -108,7 +108,7 @@ public class EnemyMovement : NetworkBehaviour
         if (collision.collider.CompareTag("mainTree"))
         {
             GameManager.Instance.mainTree.OnTreeAttacked(Core.health.currentHealth);
-            Core.pooledEnemy.ServerDespawn();
+            Core.BPO.ServerDespawn();
         }
     }
     private void OnDrawGizmosSelected()

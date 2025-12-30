@@ -9,16 +9,16 @@ public class BaseTower : NetworkBehaviour
     [HideInInspector] public TowerInteraction towerInteraction;
     [HideInInspector] public TowerHealth towerHealth;
     [HideInInspector] public TowerAttack towerAttack;
-    [HideInInspector] public PooledTower pooledTower;
     [HideInInspector] public Animator animator;
+    [HideInInspector] public BasePooledObject BPO;
     private Vector2Int towerPos;
     protected virtual void Awake()
     {
         towerInteraction = GetComponent<TowerInteraction>();
         towerHealth = GetComponent<TowerHealth>();
-        pooledTower = GetComponent<PooledTower>();
         animator = GetComponentInChildren<Animator>();
         towerAttack = GetComponent<TowerAttack>();
+        BPO= GetComponent<BasePooledObject>();
     }
     protected virtual void Start()
     {
@@ -38,7 +38,7 @@ public class BaseTower : NetworkBehaviour
     public override void OnStartServer()
     {
         base.OnStartServer();
-
+        InitTower();
     }
     #region hook
 

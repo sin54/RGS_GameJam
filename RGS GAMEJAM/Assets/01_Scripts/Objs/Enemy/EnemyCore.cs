@@ -8,17 +8,26 @@ public class EnemyCore : NetworkBehaviour
     [Header("Components")]
     [HideInInspector] public EnemyMovement movement;
     [HideInInspector] public EnemyHealth health;
-    [HideInInspector] public PooledEnemy pooledEnemy;
     [HideInInspector] public Animator animator;
     [HideInInspector] public SpriteRenderer SR;
+    [HideInInspector] public BasePooledObject BPO;
 
     private void Awake()
     {
         movement = GetComponent<EnemyMovement>();
         health = GetComponent<EnemyHealth>();
-        pooledEnemy = GetComponent<PooledEnemy>();
         animator = GetComponentInChildren<Animator>();
         SR = GetComponentInChildren<SpriteRenderer>();
+        BPO=GetComponent<BasePooledObject>();
     }
-
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+        InitServer();
+    }
+    [Server]
+    private void InitServer()
+    {
+        health.Init();
+    }
 }

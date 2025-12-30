@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using System.Collections;
+
 public class SpawnManager : NetworkBehaviour
 {
     public GameObject[] enemies;
@@ -8,24 +9,26 @@ public class SpawnManager : NetworkBehaviour
     public GameObject[] bullets;
     public GameObject dmgIndicator;
     public GameObject towerPlacePrefab;
-    [SerializeField] private PoolManager poolManager;
-    private void Awake()
-    {
 
-    }
     public override void OnStartServer()
     {
         base.OnStartServer();
         StartCoroutine(DelayedSpawn());
     }
-    #region SpawnDmgIndicator
+
+    #region Damage Indicator
     [Server]
     public void SpawnDmgIndicator(Vector2 position, int damage)
     {
-        PooledDamageIndicator PDI = poolManager.Spawn<PooledDamageIndicator>(dmgIndicator, position);
-        PDI.SetIndicator(damage);
+        var pool = GameManager.Instance.poolManager.GetPool(dmgIndicator);
+
+        var indicator = pool.Spawn(position, Quaternion.identity);
+        NetworkServer.Spawn(indicator.gameObject);
+
+        indicator.GetComponent<DamageIndicatorNet>().SetIndicator(damage);
     }
     #endregion
+
     #region SpawnInteractor
     [Server]
     private void SpawnTowerPlaceForPlayers()
@@ -37,15 +40,19 @@ public class SpawnManager : NetworkBehaviour
             PlayerTower playerTower = conn.identity.GetComponent<PlayerTower>();
             if (playerTower == null) continue;
 
-            PooledTowerBatcher PTB = poolManager.Spawn<PooledTowerBatcher>(towerPlacePrefab, playerTower.transform.position);
+            var batcher = Instantiate(
+                towerPlacePrefab,
+                playerTower.transform.position,
+                Quaternion.identity
+            );
 
-            PlayerFollowing pf = PTB.GetComponent<PlayerFollowing>();
+            NetworkServer.Spawn(batcher);
+
+            PlayerFollowing pf = batcher.GetComponent<PlayerFollowing>();
             if (pf != null)
-            {
                 pf.SetTarget(playerTower.transform);
-            }
 
-            TargetSetupTowerTrigger(conn, PTB.gameObject, playerTower.netIdentity);
+            TargetSetupTowerTrigger(conn, batcher, playerTower.netIdentity);
         }
     }
 
@@ -56,7 +63,6 @@ public class SpawnManager : NetworkBehaviour
         PlayerFollowing pf = obj.GetComponent<PlayerFollowing>();
         pf.SetTarget(myTower.transform);
 
-        // PlayerTower 내부에서 참조 저장
         myTower.SetTowerTrigger(obj);
     }
     private IEnumerator DelayedSpawn()
@@ -65,26 +71,46 @@ public class SpawnManager : NetworkBehaviour
         SpawnTowerPlaceForPlayers();
     }
     #endregion
-    #region SpawnTower
+
+    #region Spawn Tower
     [Server]
     public GameObject SpawnTower(TowerType type, Vector2 position, Vector2Int isoPos)
     {
-        PooledTower PT = poolManager.Spawn<PooledTower>(towers[(int)type-1], position);
-        PT.GetComponent<BaseTower>().SetTowerPos(isoPos);
-        return PT.gameObject;
+        var prefab = towers[(int)type - 1];
+        var pool = GameManager.Instance.poolManager.GetPool(prefab);
+
+        var tower = pool.Spawn(position, Quaternion.identity);
+        NetworkServer.Spawn(tower.gameObject);
+
+        tower.GetComponent<BaseTower>().SetTowerPos(isoPos);
+        return tower.gameObject;
     }
     #endregion
-    #region SpawnBullet
+
+    #region Spawn Bullet
+    [Server]
     public void SpawnBullet(int id, Vector2 position, float damage, Transform target)
     {
-        PooledBullet PB = poolManager.Spawn<PooledBullet>(bullets[id], position);
-        PB.GetComponent<TowerBullet>().SetBullet(target, damage);
+        var prefab = bullets[id];
+        var pool = GameManager.Instance.poolManager.GetPool(prefab);
+
+        var bullet = pool.Spawn(position, Quaternion.identity);
+        NetworkServer.Spawn(bullet.gameObject);
+
+        bullet.GetComponent<TowerBullet>()
+              .SetBullet(target, damage);
     }
     #endregion
-    #region SpawnEnemy
+
+    #region Spawn Enemy
+    [Server]
     public void SpawnEnemy(EnemyType enemyType, Vector2 position)
     {
-        PooledEnemy PE = poolManager.Spawn<PooledEnemy>(enemies[(int)enemyType], position);
+        var prefab = enemies[(int)enemyType];
+        var pool = GameManager.Instance.poolManager.GetPool(prefab);
+
+        var enemy = pool.Spawn(position, Quaternion.identity);
+        NetworkServer.Spawn(enemy.gameObject);
     }
     #endregion
 }

@@ -104,8 +104,8 @@ GameObject:
   - component: {fileID: 1222203683204547211}
   - component: {fileID: 7344533572921122443}
   - component: {fileID: 4552337140900903798}
-  - component: {fileID: 2946777412107341152}
   - component: {fileID: 5080817727807082464}
+  - component: {fileID: 1076214958466643879}
   m_Layer: 0
   m_Name: TowerBullet
   m_TagString: Untagged
@@ -287,22 +287,6 @@ MonoBehaviour:
   positionSensitivity: 0.01
   rotationSensitivity: 0.01
   scaleSensitivity: 0.01
---- !u!114 &2946777412107341152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8213924565197766133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0285386e1fda3ce44ad430ba971b0463, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PooledBullet
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  originalPrefab: {fileID: 0}
 --- !u!114 &5080817727807082464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,3 +304,15 @@ MonoBehaviour:
   syncInterval: 0
   bulletSprite: {fileID: 8334651344603559088, guid: 5ce6c6256e8716c4dacb33504b099276, type: 3}
   speed: 6.5
+--- !u!114 &1076214958466643879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213924565197766133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad03db95eb60b84680fdd3384f6113a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasePooledObject

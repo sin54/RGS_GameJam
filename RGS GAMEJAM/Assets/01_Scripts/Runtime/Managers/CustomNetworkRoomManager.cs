@@ -9,36 +9,6 @@ public class CustomNetworkRoomManager : NetworkRoomManager
     private RoomData tempRoomData;
     private Character tempCharacter;
     private int tempIndex;
-    public override void OnStartClient()
-    {
-        base.OnStartClient();
-
-        foreach (var entry in database.poolables)
-        {
-            var prefab = entry.prefab;
-
-            NetworkClient.RegisterPrefab(
-                prefab,
-                (SpawnMessage msg) =>
-                {
-                    GameObject obj = GameManager.Instance.poolManager.Get(prefab);
-                    obj.transform.SetPositionAndRotation(msg.position, msg.rotation);
-
-                    var pooledObj = obj.GetComponent<BasePooledObject>();
-                    pooledObj.originalPrefab = prefab;
-                    pooledObj.OnSpawnFromPool();
-
-                    return obj;
-                },
-                (GameObject obj) =>
-                {
-                    var pooledObj = obj.GetComponent<BasePooledObject>();
-                    GameManager.Instance.poolManager.Return(pooledObj.originalPrefab ?? prefab, obj);
-                }
-            );
-        }
-    }
-
     public void SetTempRoomData(RoomData roomData) {
         tempRoomData = roomData;
     }

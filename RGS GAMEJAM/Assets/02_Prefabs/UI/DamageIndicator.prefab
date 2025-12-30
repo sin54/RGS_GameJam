@@ -114,7 +114,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 855655935
+    rgba: 4278207999
   m_fontColor: {r: 1, g: 0.2705882, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 8223580150798377217}
   - component: {fileID: 8417526195962558979}
   - component: {fileID: 8666943774189865537}
+  - component: {fileID: 6702227995277265964}
   m_Layer: 0
   m_Name: DamageIndicator
   m_TagString: Untagged
@@ -241,13 +242,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4237739630116471609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3ce3e9c05cd294aad9855d24caca71, type: 3}
+  m_Script: {fileID: 11500000, guid: d3ac4f8d2b137ce41ad6a7133264b9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DmgIndicatorUI
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  originalPrefab: {fileID: 0}
   damageTxt: {fileID: 1749364544839814056}
 --- !u!95 &8666943774189865537
 Animator:
@@ -271,3 +268,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6702227995277265964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4237739630116471609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e100ff79bbc3df4b818b786693748f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageIndicatorNet
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0

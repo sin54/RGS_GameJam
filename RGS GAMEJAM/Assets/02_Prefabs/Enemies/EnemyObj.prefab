@@ -511,8 +511,9 @@ MonoBehaviour:
   enemyType: 0
   movement: {fileID: 3021900957594822675}
   health: {fileID: 181268767807876095}
-  pooledEnemy: {fileID: 8495419256588217089}
   animator: {fileID: 2014562567675386833}
+  SR: {fileID: 0}
+  BPO: {fileID: 0}
 --- !u!114 &8495419256588217089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,13 +523,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8964658560660251589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d555421c14f97e24996f64d70974b6df, type: 3}
+  m_Script: {fileID: 11500000, guid: bad03db95eb60b84680fdd3384f6113a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PooledEnemy
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  originalPrefab: {fileID: 0}
 --- !u!114 &181268767807876095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +544,7 @@ MonoBehaviour:
   currentHealth: 0
   enemyHealthImg: {fileID: 7145639615548372984}
   DmgIndicatorPos: {fileID: 3425869862046328142}
+  isDead: 0
 --- !u!58 &4123381468817514655
 CircleCollider2D:
   m_ObjectHideFlags: 0

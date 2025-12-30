@@ -33,7 +33,7 @@ public class TowerHealth : NetworkBehaviour,IEnemyAttackable
     public void OnTowerDestroy()
     {
         GameManager.Instance.towerManager.Remove(BT.GetTowerPos().x, BT.GetTowerPos().y);
-        BT.pooledTower.ServerDespawn();
+        BT.BPO.ServerDespawn();
     }
     [Server]
     public void SetCurrentHP(int amount)

@@ -1,47 +1,45 @@
-﻿using Mirror;
+﻿using UnityEngine;
+using Mirror;
+using JamesFrowen.Spawning;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class PoolManager : MonoBehaviour
 {
-    private Dictionary<GameObject, Queue<GameObject>> pools = new();
-
-
-    public GameObject Get(GameObject originalPrefab)
+    [System.Serializable]
+    public class PoolEntry
     {
-        if (!pools.ContainsKey(originalPrefab)) pools[originalPrefab] = new Queue<GameObject>();
-        /*
-        var q = pools[originalPrefab];
-        if (q.Count > 0)
+        public GameObject prefab;
+        public int capacity = 100;
+        public int warmup = 20;
+    }
+
+    [Header("Pools")]
+    [SerializeField] private PoolEntry[] pools;
+
+    private Dictionary<GameObject, MirrorPrefabPool> poolMap = new Dictionary<GameObject, MirrorPrefabPool>();
+
+    private void Start()
+    {
+        InitPools();
+    }
+    public void InitPools()
+    {
+        poolMap.Clear();
+        foreach (var entry in pools)
         {
-            var obj = q.Dequeue();
-            obj.SetActive(true);
-            return obj;
+            if (entry.prefab == null) continue;
+
+            if (poolMap.ContainsKey(entry.prefab)) continue;
+
+            var pool = new MirrorPrefabPool(entry.prefab, entry.capacity);
+            pool.Warnup(entry.warmup);
+
+            poolMap.Add(entry.prefab, pool);
         }
-        */
-        var go = Instantiate(originalPrefab);
-        var p = go.GetComponent<BasePooledObject>();
-        if (p != null) p.originalPrefab = originalPrefab;
-        return go;
     }
 
-    public void Return(GameObject originalPrefab, GameObject instance)
+    public MirrorPrefabPool GetPool(GameObject prefab)
     {
-        instance.SetActive(false);
-        if (!pools.ContainsKey(originalPrefab)) pools[originalPrefab] = new Queue<GameObject>();
-        pools[originalPrefab].Enqueue(instance);
-    }
-    [Server]
-    public T Spawn<T>(GameObject prefab, Vector3 pos, Quaternion rot = default)
-    where T : BasePooledObject
-    {
-        GameObject instance = GameManager.Instance.poolManager.Get(prefab);
-        instance.transform.SetPositionAndRotation(pos, rot);
-
-        T pooledObj = instance.GetComponent<T>();
-        pooledObj.originalPrefab = prefab;
-        NetworkServer.Spawn(instance);
-        pooledObj.OnSpawnFromPool();
-        return pooledObj;
+        return poolMap[prefab];
     }
 }

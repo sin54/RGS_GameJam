@@ -10,12 +10,12 @@ public class TowerBullet : NetworkBehaviour
 
     private Transform target;
     private Rigidbody2D rb;
-    private PooledBullet pooledBullet;
+    private BasePooledObject BPO;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        pooledBullet = GetComponent<PooledBullet>();
+        BPO = GetComponent<BasePooledObject>();
     }
     public void SetBullet(Transform target, float damage)
     {
@@ -26,9 +26,10 @@ public class TowerBullet : NetworkBehaviour
     {
         if (!isServer) return;
 
-        if (!target.gameObject.activeSelf)
+        if (!target.gameObject.activeSelf||target.gameObject.layer!=9)
         {
-            pooledBullet.ServerDespawn();
+           
+            BPO.ServerDespawn();
             return;
         }
 
@@ -48,6 +49,6 @@ public class TowerBullet : NetworkBehaviour
         EnemyCore EC = collision.GetComponent<EnemyCore>();
         EC.health.TakeDamage(Mathf.CeilToInt(damage));
 
-        pooledBullet.ServerDespawn();
+        BPO.ServerDespawn();
     }
 }

@@ -871,8 +871,9 @@ MonoBehaviour:
   towerLevel: 0
   towerInteraction: {fileID: 0}
   towerHealth: {fileID: 0}
-  pooledTower: {fileID: 0}
+  towerAttack: {fileID: 0}
   animator: {fileID: 0}
+  BPO: {fileID: 0}
 --- !u!114 &80016334313394521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,13 +920,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5795550677078072790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0240fb0b9b147dc4b94ddbfc8970c9e7, type: 3}
+  m_Script: {fileID: 11500000, guid: bad03db95eb60b84680fdd3384f6113a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PooledTower
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  originalPrefab: {fileID: 0}
 --- !u!114 &2759814074915309977
 MonoBehaviour:
   m_ObjectHideFlags: 0
