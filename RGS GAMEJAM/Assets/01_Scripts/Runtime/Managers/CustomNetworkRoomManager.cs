@@ -78,7 +78,7 @@ public class CustomNetworkRoomManager : NetworkRoomManager
 
         string sceneName = SceneManager.GetActiveScene().name;
 
-        if (sceneName == "GameScene")
+        if (sceneName == "05_GameScene")
         {
             foreach (var player in roomSlots.ToList())
             {
@@ -86,7 +86,7 @@ public class CustomNetworkRoomManager : NetworkRoomManager
                     player.gameObject.SetActive(false);
             }
         }
-        else if (sceneName == "Lobby")
+        else if (sceneName == "04_LobbyScene")
         {
             foreach (var player in roomSlots.ToList())
             {
