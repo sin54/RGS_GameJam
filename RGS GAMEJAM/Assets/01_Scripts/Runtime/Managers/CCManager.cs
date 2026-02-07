@@ -8,7 +8,9 @@ using UnityEngine.UI;
 
 public class CCManager : MonoBehaviour
 {
-    [SerializeField] private GameObject directPanel;
+    [SerializeField] private GameObject directPanelPrefab;
+    private GameObject directPanelInstance;
+
     [SerializeField] private TMP_InputField ipInputField;
     [SerializeField] private TMP_Text nowInfo;
     [SerializeField] private GameObject roomListPrefab;
@@ -18,16 +20,20 @@ public class CCManager : MonoBehaviour
 
     readonly Dictionary<long, DiscoveryResponse> discoveredServers = new Dictionary<long, DiscoveryResponse>();
     private Dictionary<long, GameObject> discoveredServersUI = new Dictionary<long, GameObject>();
+
     private void Awake()
     {
         networkDiscovery = GameObject.Find("NetworkManager").GetComponent<NewNetworkDiscovery>();
         networkDiscovery.OnServerFound.AddListener(OnDiscoveredServer);
+
+        // directPanel «¡∏Æ∆’¿ª Instantiate«ÿº≠ æ¿¿Ã ∫Ÿ¿”
+        directPanelInstance = Instantiate(directPanelPrefab, transform);
+        directPanelInstance.SetActive(false);
     }
 
     private void Start()
     {
         nowInfo.text = "";
-        directPanel.SetActive(false);
         RefreshServerList();
     }
     private void OnEnable()
@@ -43,11 +49,11 @@ public class CCManager : MonoBehaviour
     }
     public void OpenDirectPanel()
     {
-        directPanel.SetActive(true);
+        directPanelInstance.SetActive(true);
     }
     public void CloseDirectPanel()
     {
-        directPanel.SetActive(false);
+        directPanelInstance.SetActive(false);
     }
     public void ClientStart()
     {
